@@ -10,12 +10,18 @@ void PrintArray(string[] stringArray)
 PrintArray(stringArray);
 Console.WriteLine();
 
-string str = "null";
-for (int i = 0; i < stringArray.Length; i++)
+string kvest (string[] stringArray)
+{
+    string str = "null";
+    for (int i = 0; i < stringArray.Length; i++)
     {
         str = stringArray[i];
         if (str.Length <= 3)
             stringArray2[i]=stringArray[i];
     }
+    return str;
+}
+kvest(stringArray);
+
 PrintArray(stringArray2);
 Console.WriteLine();
